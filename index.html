@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pokemon Survey</title>
+  <h1 id="title">Pokemon Survey</h1>
+
+  <!-- CSS -->
+  <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div>
+    <p id="description">
+      A survey on your preferences in the pokemon world 
+    </p>
+    <form id="form-outer">
+      <div class="rowTab">
+          <div class="labels">
+            <label id="name-label" for="name">Name: </label>
+          </div>
+          <div class="rightTab">
+            <input id="name" type="text" name="name" class="input-field" placeholder="Enter your name" required>
+          </div>
+      </div>
+      <div class="rowTab">
+          <div class="labels">
+            <label id="email-label" for="email">Email: </label>
+          </div>
+          <div class="rightTab">
+            <input id="email" type="email" name="email" class="input-field" placeholder="Enter your email" required>
+          </div>
+      </div>
+      <div class="rowTab">
+          <div class="labels">
+            <label id="number-label" for="age">Age: </label>
+          </div>
+          <div class="rightTab">
+            <input id="number" type="number" name="age" class="input-field" min="1" max="125" placeholder="Enter your age" required>
+          </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="role">What would you like to be in the pokemon world?</label>
+        </div>
+        <div class="rightTab">
+          <select id="dropdown" name="role" class="dropdown">
+            <option disabled value>Select an option</option>
+            <option value="trainer">Trainer</option>
+            <option value="nurse">Nurse</option>
+            <option value="professor">Professor</option>
+            <option value="coordinator">Coordinator</option>
+            <option value="gymLeader">Gym Leader</option>
+            <option value="breeder">Breeder</option>
+            <option value="policeOfficer">Police Officer</option>
+            <option value="dayCarer">Day Carer</option>
+            <option value="shopKeeper">Shop Keeper</option>
+            <option value="grunt">Grunt</option>
+            <option value="preferNo">No Preference</option>
+          </select>
+        </div>
+      </div>
+      <div class="rowTab">
+          <div class="labels">
+            <label for="starter">Which starter type would you choose?</label>
+          </div>
+          <div class="rightTab">
+            <ul style="list-style: none;">
+              <li class="radio"><label><input name="radio-buttons" value="grass" type="radio" class="starter">Grass</label></li>
+              <li class="radio"><label><input name="radio-buttons" value="Fire" type="radio" class="starter">Fire</label></li>
+              <li class="radio"><label><input name="radio-buttons" value="Water" type="radio" class="starter">Water</label></li>
+            </ul>
+          </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="preferences">Which poke ball(s) do you prefer?<br>(Check all that apply)</label>
+        </div>
+        <div class="rightTab">
+          <ul style="list-style: none;">
+            <li class="checkbox"><label><input name="pokeball" value="pokeBall" type="checkbox">Poke ball</label></li>
+            <li class="checkbox"><label><input name="pokeball" value="greatBall" type="checkbox">Great ball</label></li>
+            <li class="checkbox"><label><input name="pokeball" value="ultraBall" type="checkbox">Ultra ball</label></li>
+            <li class="checkbox"><label><input name="pokeball" value="masterBall" type="checkbox">Master ball</label></li>
+            <li class="checkbox"><label><input name="pokeball" value="premierBall" type="checkbox">Premier ball</label></li>
+            <li class="checkbox"><label><input name="pokeball" value="levelBall" type="checkbox">Level ball</label></li>
+            <li class="checkbox"><label><input name="pokeball" value="lureBall" type="checkbox">Lure ball</label></li>
+            <li class="checkbox"><label><input name="pokeball" value="moonBall" type="checkbox">Moon ball</label></li>
+            <li class="checkbox"><label><input name="pokeball" value="friendBall" type="checkbox">Friend ball</label></li>
+            <li class="checkbox"><label><input name="pokeball" value="loveBall" type="checkbox">Love ball</label></li>
+            <li class="checkbox"><label><input name="pokeball" value="heavyBall" type="checkbox">Heavy ball</label></li>
+            <li class="checkbox"><label><input name="pokeball" value="fastBall" type="checkbox">Fast ball</label></li>
+          </ul>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="comments">What do you like about pokemon?</label>
+        </div>
+        <div class="rightTab">
+          <textarea id="comments" class="input-field" style="height:50px;resize:vertical" name="comment" placeholder="Share your thoughts"></textarea>
+        </div>
+      </div>
+      <button id="submit" type="submit">Submit</button>
+      </form>
+  </div>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
